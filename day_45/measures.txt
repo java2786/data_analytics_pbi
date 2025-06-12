@@ -1,0 +1,9 @@
+|   Aspect           |   Calculated Column                            |   Measure                                  |
+| ------------------ | ---------------------------------------------- | ------------------------------------------ |
+|   Definition       | A new column added to a table                  | A calculation that happens at runtime      |
+|   Storage          | Physically stored in the table                 | Not stored; calculated on the fly          |
+|   Row Context      | Works row by row                               | Works across the entire table              |
+|   Filter Context   | Not affected by slicers or filters dynamically | Adapts to slicers, filters, and visuals    |
+|   Performance      | Can slow performance with large datasets       | Faster as it's calculated only when needed |
+|   Use Case         | Row-level calculations (e.g., profit per sale) | Aggregated values (e.g., total sales, avg) |
+|   Example          | Price after discount (row-wise)                | Total revenue for filtered products        |
